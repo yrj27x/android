@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quickapp.emergencyaid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission
+        android:name="com.exapmle.helpyou.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/firstaid"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA5l4y5pHDVaUrBafn0uwiwnoQdcuMw9CU" />
+
+        <activity
+            android:name="com.quickapp.emergencyaid.SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Main"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Listcontacts"
+            android:label="@string/title_activity_listcontacts" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.PanicButton"
+            android:label="@string/title_activity_panic_button" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Alertsms"
+            android:label="@string/title_activity_contacts" >
+        </activity>
+
+        <service android:name="com.quickapp.emergencyaid.Service" />
+
+        <activity
+            android:name="com.quickapp.emergencyaid.PoliceStn"
+            android:label="@string/title_activity_police_stn" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Map"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Hospital"
+            android:label="@string/title_activity_hospital" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Chemist"
+            android:label="@string/title_activity_chemist" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.FirstAid"
+            android:label="@string/title_activity_first_aid" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Bloodbank"
+            android:label="@string/title_activity_bloodbank" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Testdownload"
+            android:label="@string/title_activity_testdownload" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Bbexpndlist"
+            android:label="@string/title_activity_bbexpndlist" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Testdisplaydata"
+            android:label="@string/title_activity_testdisplaydata" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Webviewtest"
+            android:label="@string/title_activity_webviewtest" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Testlayout"
+            android:label="@string/title_activity_testlayout" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Fileviewer"
+            android:label="@string/title_activity_fileviewer" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.BloodBankDel"
+            android:label="@string/title_activity_blood_bank_del" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.FirstaidguideActivity"
+            android:label="@string/title_activity_firstaidguide"
+            android:parentActivityName="com.quickapp.emergencyaid.FirstAid" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.helpyou.FirstAid" />
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Firstaidguidelist"
+            android:label="@string/title_activity_firstaidguidelist" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Templet1"
+            android:label="@string/title_activity_allergies" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Allergies" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Asthma_attack" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Bleeding" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Broken_bone" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Burns" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Choking" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Diabetic" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Distress" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Head_injury" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Heart_attack" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Heat_stroke" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Hypothermia" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Meningitis" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Poisoning" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Seizure" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Strains" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Stings" >
+        </activity>
+        <activity android:name="com.quickapp.emergencyaid.Stroke" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Templet2"
+            android:label="@string/title_activity_templet2" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Templet3"
+            android:label="@string/title_activity_templet3" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Templet4"
+            android:label="@string/title_activity_templet4" >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Unconscious1"
+            >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Unconsciousyes"
+             >
+        </activity>
+        <activity
+            android:name="com.quickapp.emergencyaid.Unconsciousno"
+            >
+        </activity>
+    </application>
+
+</manifest>
